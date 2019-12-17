@@ -1,2 +1,1 @@
-# UMD_CS_PROJECTS
-A few select projects that I or a group worked on at UMD Duluth
+Eliza Program that takes input text from user and outputs a response. Lasts for 20 inputs with a small memory that caches a specific input line to ask a question to the user later given the input cached.
