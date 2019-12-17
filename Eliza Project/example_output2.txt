@@ -1,0 +1,56 @@
+Script started on Thu 19 Sep 2019 02:04:13 PM CDT
+[4makka[24m:[1m~/CS4242/PA1[0m% python3 Eliza.py
+This is Eliza The Academic Advisor, programmed by Alex Jonas
+
+-> [Eliza]: Shalum, I'm your Academic Advisor. What is your name
+=> [User]: Alex Jonas
+-> [Eliza]: Hi Alex Jonas. Not much of a conversationalist are you. What is your major?
+=> [User]: Biology
+-> [Eliza]: Are you enjoying Biology as of now?
+=> [User]: yes I am
+-> [Eliza]: That's good to hear, what's your favorite part about it?
+=> [User]: shit i dont know
+-> [Eliza]: Please refrain from that use of language.
+=> [User]: the     I get o lear      to learn about cell mutation
+-> [Eliza: you get to learn about cell mutation. Interesting! So how can I help you today?
+=> [User]: I need to know how many credits I need to gt raduate
+-> [Eliza]: How many credits do you think you need to graduate?
+=> [User]: your an ass
+-> [Eliza]: Please refrain from that use of language.
+=> [User]: fine I need 8
+-> [Eliza]: You only need 8 more credits? Good for you. What classes are you taking?
+=> [User]: Biology1,           I am taking biology, computer science, and art
+-> [Eliza]: you are taking biology, computer science, and art? Hm. How are things at home?
+=> [User]: ga  fantastic
+-> [Eliza]: Oh Good! Have you thought about what you'll do after you graduate?
+=> [User]: yes I am going to buildt  things
+r-> [Eliza]: I am glad to hear you are not discouraged, college is hard work but you can do it.
+=> [User]: thanks
+-> [Eliza]: I'm only trying to encourage you. Before I forget what year are you currently in?
+=> [User]: year 2
+-> [Eliza]: You still have most your college experience ahead of you! How do you feel about that?
+=> [User]: I feel thrilled
+-> [Eliza]: What makes you feel thrilled?
+=> [User]: I get to learn a   from many fields
+-> [Eliza]: You stated that: you get to learn from many fields, Why is that?
+=> [User]: I am only a sophmore as i stated
+-> [Eliza]: you are only a sophmore as you stated? Okay, would you be interested in a group advising session?
+=> [User]: yes
+-> [Eliza]: Great! I'll set up the meeting. First let me tell you about it.
+=> [User]: alrighty
+->[Eliza]: The Advising Sessions sponsored by yours truly is a time to reflect. You, Alex Jonas will be asked a question pertaining to you an important personal detail about oneself, if we believe you are lying you are subject to ever increasing excrutiatingly painful, physical penalties. Sound fun? Are you interested?
+=> [User]: ye  as bsolutely sounds like a good time
+-> [Eliza]: Great! I think your going to enjoy it. Earlier you stated that things at home were fantastic. How do you feel about that?
+=> [User]: I feel good about the fact thatthing      things are good
+-> [Eliza]: you feel good about the fact that things are good? Why is that?
+=> [User]: Im happy
+=> [Eliza]: Remember when reflecting use I to start with.
+=> [User]: I am happy
+-> [Eliza]: you are happy. I enjoyed talking to you today Alex Jonas now get out of my office.
+=> [User]: Wait  @   ! you never helped me!
+=> [Eliza]: Until next time.
+=> [Eliza]: End of program.
+[4makka[24m:[1m~/CS4242/PA1[0m% exit
+exit
+
+Script done on Thu 19 Sep 2019 02:09:26 PM CDT

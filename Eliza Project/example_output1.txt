@@ -1,0 +1,57 @@
+Script started on Thu 19 Sep 2019 02:18:00 PM CDT
+[4makka[24m:[1m~/CS4242/PA1[0m% python3 Eliza.py
+This is Eliza The Academic Advisor, programmed by Alex Jonas
+
+-> [Eliza]: Shalum, I'm your Academic Advisor. What is your name
+=> [User]: you tell me asshole
+-> [Eliza]: Please refrain from that use of language.
+=> [User]: sorry
+> I didn't quite catch that
+=> [User]: Alex Jonas
+-> [Eliza]: Hi Alex Jonas. Not much of a conversationalist are you. What is your major?
+=> [User]: Computer Science
+-> [Eliza]: Are you enjoying Computer Science as of now?
+=> [User]: no I am not
+-> [Eliza]: I'm sorry to hear your not enjoying it. Where are you from?
+=> [User]: I am from Anod  dover
+-> [Eliza: you are from Andover. Interesting! So how can I help you today?
+=> [User]: I need to know how mn any credits i need to gre ada uate
+-> [Eliza]: How many credits do you think you need to graduate?
+=> [User]: not sure dicke head
+-> [Eliza]: Please refrain from that use of language.
+=> [User]: fine i need 8 credits
+-> [Eliza]: You only need 8 more credits? Good for you. What classes are you taking?
+=> [User]: I am taking NLP, Computer Networks, an  Ancient Greece, and Geology
+-> [Eliza]: you are taking NLP, Computer Networks, Ancient Greece, and Geology? Hm. How are things at home?
+=> [User]: things are pretty awful
+I'm sorry to hear things are awful at home. Have you thought about what you'll do after you graduate?
+=> [User]: no I have not
+-> [Eliza]: You sound discouraged, college is hard work but you can do it.
+=> [User]: great thanks
+-> [Eliza]: I'm only trying to encourage you. Before I forget what year are you currently in?
+=> [User]: Im a senior
+-> [Eliza]: Your almost out of here! How does that make you feel?
+=> [User]: I feel happy and sad
+-> [Eliza]: What makes you feel happy and sad?
+=> [User]: I feel like I have more to learn but im happy to move on
+-> [Eliza]: You stated that: you feel like you have more to learn but your happy to move on, Why is that?
+=> [User]: I can always learn more but i need to start work
+-> [Eliza]: you can always learn more but you need to start work? Okay, would you be interested in a group advising session?
+=> [User]: maybe 
+-> [Eliza]: Let me tell you about it, before making any final decisions. 
+=> [User]: alrighty
+->[Eliza]: The Advising Sessions sponsored by yours truly is a time to reflect. You, Alex Jonas will be asked a question pertaining to you an important personal detail about oneself, if we believe you are lying you are subject to ever increasing excrutiatingly painful, physical penalties. Sound fun? Are you interested?
+=> [User]: perhp aps
+-> [Eliza]: We can circle back to that later. Earlier you stated that things at home were awful. How do you feel about that?
+=> [User]: I feel      don't know maybe I need to be there
+-> [Eliza]: you don't know maybe you need to be there? Why is that?
+=> [User]: I think they need help
+-> [Eliza]: you think they need help. I enjoyed talking to you today Alex Jonas now get out of my office.
+=> [User]: but yo  u didn't help me shit for brains
+-> [Eliza]: Please refrain from that use of language.
+=> [User]: Sorry, but wait
+=> [Eliza]: End of program.
+[4makka[24m:[1m~/CS4242/PA1[0m% exit
+exit
+
+Script done on Thu 19 Sep 2019 02:25:24 PM CDT
