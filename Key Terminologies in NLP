@@ -1,0 +1,104 @@
+Natural Language Processing- The way machine understand human language
+
+Natural language processing (NLP) is a branch of Artificial intelligence (AI) that helps computers understand, interpret and manipulate and respond to human in their natural language.
+In simple words , “Natural language processing is the way computers understand human language.”
+To build machine learning model we consider different features in numeric format only as our model understand only numeric form. Sometimes we came across scenario when some of our features are in categorical text format.In that case we perform some pre-processing and feature encoding techniques like Label encoding or One Hot encoding convert then into numerical format also knows as vectors.
+Main Challenge is when our whole feature is text format , like product reviews,tweets or comments ,how will you train your machine learning model with text data ? as we all know Machine learning algorithms work only with numeric inputs.
+In that scenario Natural language processing comes into the picture.
+Image for post
+In this article we will learn basic methods using python library nltk.
+NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning and many more.
+To install nltk run the following command in terminal :
+$ pip install nltk
+After installing the NLTK package, run the below code to install all the necessary datasets/models for specific functions to work.
+import nltk
+nltk.download ()
+Lets move forward with considering you downloaded nltk and done with basic setup of python environment.
+Tokenization
+Tokenization is the process breaking complex data like paragraphs into simple units called tokens.
+Sentence tokenization : split a paragraph into list of sentences using sent_tokenize() method
+Word tokenization : split a sentence into list of words using word_tokenize() method
+Import all the libraries required to perform tokenization on input data.
+from nltk.tokenize import sent_tokenize, word_tokenizefrom
+
+Tokenization of input data
+Some other important terms related to word Tokenization are:
+Bigrams: Tokens consist of two consecutive words known as bigrams.
+Trigrams: Tokens consist of three consecutive words known as trigrams.
+Ngrams: Tokens consist of ’N’ number of consecutive words known as ngrams
+Data Cleaning plays important role in NLP to remove noise from data.
+Stopwords : refers to the most common words in a language (such as “the”, “a”, “an”, “in”) which helps in formation of sentence to make sense, but these words does not provide any significance in language processing so remove it .
+You can check list of stopwords by running below code snippet :
+from nltk.corpus import stopwords
+stopwords.words('english')
+
+Data Cleaning : Removing stopwords & punctuation’s
+Stemming
+Stemming is a normalization technique where list of tokenized words are converted into shorten root words to remove redundancy. Stemming is the process of reducing inflected (or sometimes derived) words to their word stem, base or root form.
+A computer program that stems word may be called a stemmer.
+A stemmer reduce the words like fishing, fished, and fisher to the stem fish. The stem need not be a word, for example the Porter algorithm reduces, argue, argued, argues, arguing, and argus to the stem argu .
+
+Stemming using PorterStemmer
+Lemmatization
+Major drawback of stemming is it produces Intermediate representation of word. Stemmer may or may not return meaningful word.
+To overcome this problem Lemmatization comes into picture.
+Stemming algorithm works by cutting suffix or prefix from the word.On the contrary Lemmatization consider morphological analysis of the words and returns meaningful word in proper form.
+Hence,lemmatization is preferred.
+from nltk.stem import WordNetLemmatizer
+
+Lemmatization
+Note: Don’t forget to lower case the words.
+POS (Part-Of-Speech) Tagging
+POS (Parts of Speech) tell us about grammatical information of words of the sentence by assigning specific token (Determiner, noun, adjective , adverb ,verb,Personal Pronoun etc.) as tag (DT,NN ,JJ,RB,VB,PRP etc) to each words.
+Word can have more than one POS depending upon context where it is used. we can use POS tags as statistical NLP tasks it distinguishes sense of word which is very helpful in text realization and infer semantic information from gives text for sentiment analysis.
+Example:
+#Program: POS.py 
+import nltk
+from nltk.tokenize import word_tokenize
+data="The pink sweater fit her perfectly"
+words=word_tokenize(data)
+for word in words: 
+   print(nltk.pos_tag([word]))
+Output:
+[('The', 'DT')]
+[('pink', 'NN')]
+[('sweater', 'NN')]
+[('fit', 'NN')]
+[('her', 'PRP$')]
+[('perfectly', 'RB')]
+Named Entity Recognition:
+The process of recognizing named entity such as person name, location name , organization name , designation of person ,quantities or values.
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk import ne_chunk
+sentence="The US president stays in WHITE HOUSE"
+sent_tokens=word_tokenize(sentence)
+tags=nltk.pos_tag(sent_tokens)
+NER=ne_chunk(tags)
+print(NER)
+output:
+(S
+  The/DT
+  (GSP US/NNP)
+  president/NN
+  stays/NNS
+  in/IN
+  (FACILITY WHITE/NNP HOUSE/NNP))
+Chunking (shallow parsing)
+Chunking is the process of making a group of tokens into chunks. In simple words chunking is used as selecting the subsets of tokens. The parts of speech are combined with regular expressions.
+Chunking is used for entity detection. An entity is that part of the sentence by which machine get the value for any intention
+Chunking is used to categorize different tokens into the same chunk. The result will depend on grammar which has been selected. Further chunking is used to tag patterns and to explore text corpora.
+Note:In order to use BoW CountVectorizer and TF-IDF we must pass Strings instead of tokens. we can use detokenizer or join method to join all tokens of list into a single string
+Bag of Words (BoW) : Document Matrix
+We cannot directly feed our text to machine learning algorithm; the text must be converted into vectors of numbers.
+The bag-of-words model is method of feature extraction which preprocess the text by converting it into numeric format also known as vectors .BoW keeps count of the total occurrences of most frequently used words.
+In simple terms, it’s a collection of words to represent a sentence with word count disregarding the order in which they appear.
+
+Bag of Words (BoW)
+Bag of Words just creates a set of vectors containing the count of word occurrences in the document , while the TF-IDF model contains information on the more important words and the less important ones as well.
+Bag of Words vectors are easy to interpret. However, TF-IDF usually performs better in machine learning models.Hence TF-IDF is preferred.
+TF-IDF
+TF-IDF stands for Term Frequency-Inverse Document Frequency
+“Term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus.”
+Term Frequency: is a scoring of the frequency of the word in the current document.
+Inverse Document Frequency: is a scoring of how rare the word is across documents.
