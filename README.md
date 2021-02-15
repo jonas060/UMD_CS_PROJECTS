@@ -17,6 +17,7 @@ that acts increasingly paranoid or less so depending upon input the user provide
 The Sentiment Classifier program was developed to classify if a given review was positive or negative. The Sentiment Classifer developed in "understanding" of a positive or negative review through a training phase.
 
  #Training Phase
+ 
 Within this training phase the program was fed hundreds of reviews, the program would cache certain keywords within each review along with the rating of the review '1' being a postive review '2' being a negative review. The program was then able to statistically determine if a given keywords were likely to be from a positive or negative review. During the training phase the program determined that certain keywords were given different "weights" or determining leverage as some keywords could be used both in a postive or negative context. This wasn't due to any brilliance from the programming but rather simple arithmetic with additonal adjustment of weight values for keywords.
 
 For example:
@@ -51,7 +52,8 @@ Where a negative value pertains to negative sentiment and a postive value a post
     
 Next comes the testing phase in which we feed the program entirely new and unused reviews. Now the Sentiment Classifier must determine what the sentiment of a few hundred  reviews are knowing only the keywords that pertain to a certain sentiment given the decision list.
     
-#Gold Phase 
+#Gold Phase
+
 This is where we compare the Sentiment Classifiers result on what the sentiment of each review was against the actual sentiment of the review. The result is a confusion matrix of True Postive, True Negative, False Positive, False Negative. With basic arithmetic (TP+TN)/(FP+FN) we are able to see how accurate our Sentiment Classifier is.
     
 ## POS-Tag Classifier
