@@ -58,4 +58,23 @@ This is where we compare the Sentiment Classifiers result on what the sentiment 
     
 ## POS-Tag Classifier
 The POS-Tag Classifier as with the Sentiment Classifier trains on specific data and determines what POS_TAG (Noun, ADJ, Verb, ...) a given word is. The determination is then placed within a decision list (PA5-log.txt) and compared against a key. The determination list is created within "Tag.py" the resulting score and confusion matrix is created within the "Score.py". Score.py uses the decision list to determine the POS-Tag Classifiers overall accuracy. The program received a 92.87% accuracy rating.
+
+## The Random Uni-Bi-Tri Gram Sentence Generator
+The program is designed to take an input of what size n-gram you would like from 1-3, how many random sentences you would like generated, as many as you want!
+Lastly the program looks for an input of a text document to train the program, it can be as many
+different text documents as you would like, the more documents though the more tokens that will be
+generated within the training data, and therefore a longer runtime. That being said the more text
+also means the more potential sentences generated.
+
+N-gram refers to how many consecutive words the program can create at once that will proceed the given word to formulate a logical sentence.
+
+For example:
+
+Uni-gram: Words are randomly chosen to attempt to create a sentence. For Example: "Walnut" + "barter" + "fun" + ... Sentences are usually nonsensical with incorrect punctuation.
+
+Bi-gram: If the first word is "I" the program will determine only the next one word that would logically help complete the sentence. Then piggy-back off the word it just placed in front of "I" with another third word that logically connects to the second word it just placed in front of I. There "I" + "would" + "Like"... This is referred to as word-pairs. Punctuation can be a major setback as well as many nonsensical sentences still, although some sentences carry across an idea unlike most of the unigram sentences.
+
+Tri-gram: Uses three word segments that are logical to complete a sentence. "I would like" + " _ would like to" + " _ _ like to buy " + _ _ _ to buy walnuts" " _ _ _ buy walnuts ." Creating the sentence "I would like to buy walnuts". With correct punctuation, sentences are almost always complete sentences.
+
+Usually the random words generated with a tri-gram end up being the inital training data.
     
