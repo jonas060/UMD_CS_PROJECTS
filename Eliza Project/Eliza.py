@@ -25,7 +25,7 @@ regex_Im = r"(.*)[Ii]\'?m\b(.*)"
 regex_am = r"(.*)am\b(.*)"
 regex_my = r"(.*)my\b(.*)"
 user_dialogue = input("=> [User]: ")
-regex_swear = r"(.*)ass(.*)|(.*)bitch(.*)|(.*)fuck(.*)|(.*)shit(.*)|(.*)piss(.*)|(.*)dick(.*)|(.*)nigga(.*)|(.*)pussy(.*)"
+regex_swear = r"(.*)ass(.*)|(.*)bitch(.*)|(.*)fuck(.*)|(.*)shit(.*)|(.*)piss(.*)|(.*)dick(.*)|(.*)pussy(.*)"
 while(user_dialogue != 'exit' and counter == 100):
 	#Different possibilities for stating your name to Eliza
 	if re.search(regex_swear, user_dialogue) is not None: #looks for abusive language before searching for any other regular expression match
